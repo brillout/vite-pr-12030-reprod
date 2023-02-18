@@ -1,12 +1,15 @@
 lockfileVersion: 5.4
 
+overrides:
+  vite: npm:@brillout/vite@4.1.1-pr.12030
+
 specifiers:
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
   '@vitejs/plugin-react': ^3.1.0
   react: ^18.2.0
   react-dom: ^18.2.0
-  vite: ^4.1.0
+  vite: npm:@brillout/vite@4.1.1-pr.12030
 
 dependencies:
   react: 18.2.0
@@ -15,8 +18,8 @@ dependencies:
 devDependencies:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  '@vitejs/plugin-react': 3.1.0_vite@4.1.2
-  vite: 4.1.2
+  '@vitejs/plugin-react': 3.1.0_tsdmgn37zzarqiz6gj4vzj6mwe
+  vite: /@brillout/vite/4.1.1-pr.12030
 
 packages:
 
@@ -245,6 +248,39 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@brillout/vite/4.1.1-pr.12030:
+    resolution: {integrity: sha512-HoOBWW2sJTp0Ha54ZMzU7k/5ognkcWBt5K6SOQ/z7k/ZpccpukPkOONWb7f0B58qO76OJALponGFS7R0z4WTIQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.16.17
+      postcss: 8.4.21
+      resolve: 1.22.1
+      rollup: 3.17.1
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /@esbuild/android-arm/0.16.17:
@@ -505,7 +541,7 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
-  /@vitejs/plugin-react/3.1.0_vite@4.1.2:
+  /@vitejs/plugin-react/3.1.0_tsdmgn37zzarqiz6gj4vzj6mwe:
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -516,7 +552,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.1.2
+      vite: /@brillout/vite/4.1.1-pr.12030
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -813,39 +849,6 @@ packages:
       browserslist: 4.21.5
       escalade: 3.1.1
       picocolors: 1.0.0
-    dev: true
-
-  /vite/4.1.2:
-    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.16.17
-      postcss: 8.4.21
-      resolve: 1.22.1
-      rollup: 3.17.1
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /yallist/3.1.1:
